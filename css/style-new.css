@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --green: #1BB471;
+    --yellow: #FFE500;
+    --red: #FD2260;
+    --blue: #3B1EEA;
+    --bg-green: #F0FAE9;
+
+
+
+    --light-purple: #F6F4FE;
+    --purple: #6A49F2;
+    --bg-purple: #6A49F2;
+    --dark-purple: #32236F;
+    --body-text-purple: #3E3F66;
+    --text-white: #ffffff;
+    --bg-white: #ffffff;
+    --slider-dots-color: #D4D2DD;
+    --light-bg: #DFDAF3;
+}
+
+/* ------Common-Css------------- */
+
+html{scroll-behavior:smooth}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Finlandica', sans-serif;
+    color: var(--body-text-purple);
+    /* background-color: var(--light-purple); */
+}
+
+/* ---------Hero-banner-Css-Start------------------ */
+/* hero banner wraper */
+.banner_section_compass {
+    padding-top: 180px;
+    position: relative;
+    background: #FEDC02;
+    /* background-image: url(../assets/compass.png); */
+}
+
+.banner_section_compass .banner_shape1 {
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    animation: circlemove 10s infinite;
+}
+
+
+@keyframes circlemove {
+    50% {transform: rotate(10deg);}
+  }
+
+.turning-animation {
+    /* position: absolute;
+    top: 200px;
+    left: 15%; */
+    margin-left: 1rem;
+    animation: fcirclemove 10s infinite;
+}
+
+@keyframes fcirclemove {
+    50% {transform: rotate(360deg);}
+  }
+
+#section-benefit{
+    margin-top: 40px;
+    padding: 50px 0;
+}
+
+#section-benefit .card{
+    background-color: #F0FAE9;
+}
+
+#section-benefit .card:hover{
+    background-color: #FEDC02;
+}
+
+#section-activity .card-img-wrapper{
+    overflow: hidden;
+    position: inherit;
+}
+.card-img-wrapper .activity-title{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    color:white;
+}
+#section-activity .card{
+    background-color: #F0FAE9;
+}
+
+#section-promo {
+    height:600px; 
+    /* background-color: aqua; */
+    position: relative;
+    margin: 50px 0;
+}
+#section-promo .promo-text-yellow{
+    position:absolute;
+    z-index: 1;
+    top: 5%;
+}
+#section-promo .promo-woman{
+    position:absolute;
+    z-index: 2;
+    top: -5%;
+    animation: circlemove 10s infinite;
+}
+#section-promo .promo-text-blue{
+    position:absolute;
+    z-index: 3;
+    bottom: 5%;
+}
+#section-company {
+    margin-top: 5rem;
+}
+#section-bpoint {
+    margin-top: 5rem;
+    padding: 5rem 0;
+    /* height:600px;  */
+    background-color: #F0FAE9;
+}
+.bpoint-left{
+    background-image: url(../assets/arrow_green.png);
+    background-repeat: no-repeat;
+}
+.bpoint-right{
+    background-image: url(../assets/arrow_red.png);
+    background-repeat: no-repeat;
+}
+#section-bpoint .card-header .btn {
+    padding: 0;
+    color: var(--dark-purple);
+    font-weight: 600;
+    font-size: 20px;
+}
+#section-bpoint .card-header .icon_faq {
+    /* position: absolute;
+    right: 20px; */
+    color: #839BC0;
+}
+#section-bpoint .card{
+    opacity: 0.9;
+    background-color: #fff;
+}
+#section-bpoint .table{
+    margin:0;
+}
+#section-bpoint .table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border:0;
+    /* border-top: 1px solid #dee2e6; */
+}
+#section-detail {
+    margin-top: 5rem;
+    padding: 5rem 0;
+}
+#section-detail .card{
+    /* opacity: 0.5; */
+    border: 0px;
+}
+#section-detail .card-body{
+    opacity: 0.5;
+}
+#section-detail .card-footer{
+    opacity: 0.5;
+}
+.footer-bottom{
+    background-color: var(--yellow);;
+}
+.footer-top{
+    background-image: url(../assets/footer_cloud.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -100px;
+}
+.footer-middle{
+    background-image: url(../assets/footer_arc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.footer-middle .row{
+    height: 380px;
+}
+.footer-middle .footer-content-bike{
+    padding-bottom: 50px;
+}
+
+.footer-top .banner_shape1 {
+    top: 200px;
+    left: -15%;
+    animation: fcirclemove 10s infinite;
+}
+.footer-top .banner_shape2 {
+    top: 200px;
+    right: -15%;
+    animation: fcirclemove 10s infinite;
+}
+#section-partnership{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
