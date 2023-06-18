@@ -10,6 +10,7 @@
 
   <!-- icofont-css-link -->
   <link rel="stylesheet" href="css/icofont.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <!-- Owl-Carosal-Style-link -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <!-- Bootstrap-Style-link -->
@@ -46,8 +47,8 @@
       	<!-- navigation bar -->
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">
-            <!-- <img src="images/logo.png" alt="image" > -->
-            <a class="text-light" href="/"><h3>Богд банк</h3></a>
+            <img src="assets/bogdbank.png" alt="image" >
+            <!-- <a class="text-light" href="/"><h3>Богд банк</h3></a> -->
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,11 +80,11 @@
     </header>
 
     <!-- Section Compass banner -->
-    <section id="section-compass" class="banner_section_compass">
+    <section id="section-compass" >
       <div class="container">
-        <div class="row">
+        <div class="row p-relative">
           <span class="banner_shape1"> <img src="assets/compass_circle.png" alt="image" > </span>
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-12" style="padding-top:200px">
             <div class="banner_text">
               <img class="blue_img" src="assets/compass_text.png" alt="image" >
               <h4>Халаасанд тань байх луужин</h4>
@@ -101,9 +102,30 @@
           </div>
 
           <div class="col-lg-6 col-md-12"  data-aos="fade-in" data-aos-duration="1500">
-            <div class="compass-guy">
-              <img class="moving_animation" src="assets/compass_guy.png" alt="image" >
+            <div class="banner_slider">
+
+              <div id="compass_slider" class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="slider_img">
+                    <img src="assets/compass_guy.png" alt="image" >
+                  </div>
+                </div>
+                <!-- <div class="item">
+                  <div class="slider_img">
+                    <img src="assets/compass_guy.png" alt="image" >
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="slider_img">
+                    <img src="assets/compass_guy.png" alt="image" >
+                  </div>
+                </div> -->
+              </div>
             </div>
+
+            <!-- <div class="compass-guy">
+              <img class="moving_animation" src="assets/compass_guy.png" alt="image" >
+            </div> -->
           </div>
         </div>
       </div>
@@ -206,14 +228,13 @@
                     <li>
                       <h3>Хүрээлэл</h3>
                     </li>
+                    <li>
+                      <p>
+                        Компасс карт нь олон төрлийн хөнгөлөлт, буцаан олголт, урамшуулал оноог залууст тохирсон таатай нөхцөлөөр бүрдүүлж байна. Хамгийн чухал нь картаар дамжуулан эерэг коммьюнитийн нэг хэсэг болж төрөл бүрийн эвент, контент, сургалт, нийгэмдээ бодитоор нөлөөлөх боломжоо, хүрээллээ тэлээрэй.
+                      </p>
+                    </li>
                   </ul>
                 </div>
-             
-              <div class="card-body">
-                <p class="card-text">
-                  Компасс карт нь олон төрлийн хөнгөлөлт, буцаан олголт, урамшуулал оноог залууст тохирсон таатай нөхцөлөөр бүрдүүлж байна. Хамгийн чухал нь картаар дамжуулан эерэг коммьюнитийн нэг хэсэг болж төрөл бүрийн эвент, контент, сургалт, нийгэмдээ бодитоор нөлөөлөх боломжоо, хүрээллээ тэлээрэй.
-                </p>
-              </div>
             </div>
 
             <!-- Card 2 -->
@@ -229,14 +250,13 @@
                       <h3>
                         эвентүүд</h3>
                     </li>
+                    <li>
+                      <p class="card-text">
+                        Өдөр тутмын ажлаасаа түрхэн хугацаанд салж, ур чадвар, танилын хүрээллээ тэлэх боломжтой нэгэн хэвийн бус тогтмол эвентүүд. Ямар нэг хүлээлт, төсөөлөл хэрэггүй, учир нь эвент бүр өөрийн гэсэн онцлогтой байх болно. Та ч гэсэн өөрийн онцлогоор эвентэд нэгдээрэй.
+                      </p>
+                    </li>
                   </ul>
                 </div>
-             
-              <div class="card-body">
-                <p class="card-text">
-                  Өдөр тутмын ажлаасаа түрхэн хугацаанд салж, ур чадвар, танилын хүрээллээ тэлэх боломжтой нэгэн хэвийн бус тогтмол эвентүүд. Ямар нэг хүлээлт, төсөөлөл хэрэггүй, учир нь эвент бүр өөрийн гэсэн онцлогтой байх болно. Та ч гэсэн өөрийн онцлогоор эвентэд нэгдээрэй.
-                </p>
-              </div>
             </div>
 
             <!-- Card 3 -->
@@ -252,14 +272,13 @@
                       <h3>
                         контентууд</h3>
                     </li>
+                    <li>
+                      <p class="card-text">
+                        Зах замбараагүй мэдээллээр дүүрсэн сошиалаас түр холдож, өөрт хэрэгтэй мэдлэг туршлага, шинэ зүйлсийг олж авах боломжтой тусгай контентууд. Контентийн агуулга бүр сонирхолтой байх болно.
+                      </p>
+                    </li>
                   </ul>
                 </div>
-             
-              <div class="card-body">
-                <p class="card-text">
-                  Зах замбараагүй мэдээллээр дүүрсэн сошиалаас түр холдож, өөрт хэрэгтэй мэдлэг туршлага, шинэ зүйлсийг олж авах боломжтой тусгай контентууд. Контентийн агуулга бүр сонирхолтой байх болно.
-                </p>
-              </div>
             </div>
 
             <!-- Card 4 -->
@@ -275,14 +294,13 @@
                       <h3>
                         төслүүд</h3>
                     </li>
+                    <li>
+                      <p class="card-text">
+                        Карт зурах, гүйлгээ хийх, найзаа урих, хадгаламж нээх зэрэг бүхий л үйлдэлд B-Point хоёр дахин үржигдэнэ. Харин та цуглуулах л үлдлээ. 1 b-point = 1төгрөг
+                      </p>
+                    </li>
                   </ul>
                 </div>
-             
-              <div class="card-body ">
-                <p class="card-text">
-                  Карт зурах, гүйлгээ хийх, найзаа урих, хадгаламж нээх зэрэг бүхий л үйлдэлд B-Point хоёр дахин үржигдэнэ. Харин та цуглуулах л үлдлээ. 1 b-point = 1төгрөг
-                </p>
-              </div>
             </div>
 
           </div>
@@ -293,16 +311,16 @@
     <section id="section-promo" >
       <div class="container-fluid">
         <div class="promo-wrapper">
-          <div class="promo-text-yellow col-xl-10 " data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500" >
+          <div class="promo-text-yellow col-xl-10 " data-aos="fade-right" data-aos-duration="500" data-aos-delay="0" >
             <img class="img-fluid" src="assets/promo_text_yellow.png" />
-            <img class="turning-animation" src="assets/promo_arrow_yellow.png" />
+            <!-- <img class="turning-animation" src="assets/promo_arrow_yellow.png" /> -->
           </div>
           <div class="promo-woman col-xl-4 offset-xl-7 ">
-            <img class="img-fluid banner_shape1" src="assets/promo_woman.png" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" />
+            <img class="img-fluid banner_shape1" src="assets/promo_woman.png" />
           </div>
-          <div class="promo-text-blue col-xl-10 offset-xl-2 " data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
+          <div class="promo-text-blue col-xl-10 offset-xl-2 " data-aos="fade-left" data-aos-duration="600" data-aos-delay="100">
             <img class="img-fluid" src="assets/promo_text_blue.png"  />
-            <img class="turning-animation" src="assets/promo_arrow_blue.png" />
+            <!-- <img class="turning-animation" src="assets/promo_arrow_blue.png" /> -->
           </div>
         </div>
       </div>
@@ -310,13 +328,11 @@
 
     <!-- Section company -->
     <section id="section-company">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-12 text-center mt-4 mb-4">
+          <div class="col-xl-10 offset-xl-1 text-center mt-4 mb-4">
             <h1 class="h1 text-uppercase font-weight-bold">Хамтрагч байгууллагууд</h1>
-
-          </div>
-        </div>
+ 
         <div class="row mb-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
           <div class="col">
             <img class="img-fluid" src="assets/icon_cu.png" />
@@ -363,6 +379,10 @@
             <img class="img-fluid" src="assets/icon_cu.png" />
           </div>
         </div>
+        
+      </div>
+    </div>
+
       </div>
     </section>
 
@@ -409,7 +429,7 @@
                           </td>
                           <td scope="col border-0">
                             <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_1">
-                              <i class="icon_faq icofont-plus"></i></i> 
+                              <i class="icon_faq icofont-simple-left"></i></i> 
                               </button>
                           </td>
                         </tr>
@@ -440,7 +460,7 @@
                           </td>
                           <td scope="col border-0">
                             <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_2">
-                              <i class="icon_faq icofont-plus"></i></i> 
+                              <i class="icon_faq icofont-simple-left"></i></i> 
                               </button>
                           </td>
                         </tr>
@@ -470,7 +490,7 @@
                           </td>
                           <td scope="col border-0">
                             <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_3">
-                              <i class="icon_faq icofont-plus"></i></i> 
+                              <i class="icon_faq icofont-simple-left"></i></i> 
                               </button>
                           </td>
                         </tr>
@@ -500,7 +520,7 @@
                           </td>
                           <td scope="col border-0">
                             <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_4">
-                              <i class="icon_faq icofont-plus"></i></i> 
+                              <i class="icon_faq icofont-simple-left"></i></i> 
                               </button>
                           </td>
                         </tr>
@@ -545,7 +565,7 @@
                         </td>
                         <td scope="col border-0">
                           <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_11">
-                            <i class="icon_faq icofont-plus"></i></i> 
+                            <i class="icon_faq icofont-simple-down"></i></i> 
                             </button>
                         </td>
                       </tr>
@@ -576,7 +596,7 @@
                         </td>
                         <td scope="col border-0">
                           <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_22">
-                            <i class="icon_faq icofont-plus"></i></i> 
+                            <i class="icon_faq icofont-simple-left"></i></i> 
                             </button>
                         </td>
                       </tr>
@@ -606,7 +626,7 @@
                         </td>
                         <td scope="col border-0">
                           <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_33">
-                            <i class="icon_faq icofont-plus"></i></i> 
+                            <i class="icon_faq icofont-simple-left"></i></i> 
                             </button>
                         </td>
                       </tr>
@@ -636,7 +656,7 @@
                         </td>
                         <td scope="col border-0">
                           <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapse_44">
-                            <i class="icon_faq icofont-plus"></i></i> 
+                            <i class="icon_faq icofont-simple-left"></i></i> 
                             </button>
                         </td>
                       </tr>
@@ -659,7 +679,7 @@
 
     <!-- Section Detail -->
     <section id="section-detail">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col text-center">
             <h1 class="h1 font-weight-bold text-success">Картын сонголтууд</h1>
@@ -667,148 +687,93 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-xl-10 offset-xl-1">
+            <div class="row">
+              <div class="col">
 
-            <div class="card" >
-              <div class="card-header">
-                <h5 class="card-title">Card title</h5>
+                <div class="card" >
+                  <div class="card-header">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img class="card-img img-fluid" src="assets/card_1.png" />
+                  <div class="card-body">
+                    
+                    
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+    
               </div>
-              <img class="card-img img-fluid" src="assets/card_1.png" />
-              <div class="card-body">
-                
-                
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+              <div class="col">
+    
+                <div class="card" >
+                  <div class="card-header">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img class="card-img img-fluid" src="assets/card_1.png" />
+                  <div class="card-body">
+                    
+                    
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+    
               </div>
-              <div class="card-footer">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="col">
+    
+                <div class="card" >
+                  <div class="card-header">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img class="card-img img-fluid" src="assets/card_1.png" />
+                  <div class="card-body">
+                    
+                    
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="col">
+    
+                <div class="card" >
+                  <div class="card-header">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img class="card-img img-fluid" src="assets/card_1.png" />
+                  <div class="card-body">
+                    
+                    
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+    
               </div>
             </div>
 
-          </div>
-          <div class="col">
-
-            <div class="card" >
-              <div class="card-header">
-                <h5 class="card-title">Card title</h5>
-              </div>
-              <img class="card-img img-fluid" src="assets/card_1.png" />
-              <div class="card-body">
-                
-                
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-              </div>
-              <div class="card-footer">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
+            
 
           </div>
-          <div class="col">
 
-            <div class="card" >
-              <div class="card-header">
-                <h5 class="card-title">Card title</h5>
-              </div>
-              <img class="card-img img-fluid" src="assets/card_1.png" />
-              <div class="card-body">
-                
-                
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-              </div>
-              <div class="card-footer">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col">
-
-            <div class="card" >
-              <div class="card-header">
-                <h5 class="card-title">Card title</h5>
-              </div>
-              <img class="card-img img-fluid" src="assets/card_1.png" />
-              <div class="card-body">
-                
-                
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-              </div>
-              <div class="card-footer">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
     </section>
-
-    <!-- Trusted Section start -->
-    <section class="row_am trusted_section">
-      <!-- container start -->
-      <div class="container">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-          <!-- h2 -->
-          <h2>Trusted by <span>150+</span> companies</h2>
-          <!-- p -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe
-            standard dummy.</p>
-        </div>
-
-        <!-- logos slider start -->
-        <div class="company_logos" >
-          <div id="company_slider" class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="logo">
-                <img src="images/paypal.png" alt="image" >
-              </div>
-            </div>
-            <div class="item">
-              <div class="logo">
-                <img src="images/spoty.png" alt="image" >
-              </div>
-            </div>
-            <div class="item">
-              <div class="logo">
-                <img src="images/shopboat.png" alt="image" >
-              </div>
-            </div>
-            <div class="item">
-              <div class="logo">
-                <img src="images/slack.png" alt="image" >
-              </div>
-            </div>
-            <div class="item">
-              <div class="logo">
-                <img src="images/envato.png" alt="image" >
-              </div>
-            </div>
-            <div class="item">
-              <div class="logo">
-                <img src="images/paypal.png" alt="image" >
-              </div>
-            </div>
-            <div class="item">
-              <div class="logo">
-                <img src="images/spoty.png" alt="image" >
-              </div>
-            </div>
-            <div class="item">
-              <div class="logo">
-                <img src="images/shopboat.png" alt="image" >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- logos slider end -->
-      </div>
-      <!-- container end -->
-    </section>
-    <!-- Trusted Section ends -->
 
     <!-- Pricing-Section -->
     <section class="row_am pricing_section" id="pricing">
@@ -1045,106 +1010,6 @@
     </section>
     <!-- Pricing-Section end -->
 
-    <!-- Download-Free-App-section-Start  -->
-    <section class="row_am free_app_section" id="getstarted">
-      <!-- container start -->
-        <div class="container">
-            <div class="free_app_inner" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100"> 
-                <!-- row start -->
-                <div class="row">
-                  <!-- content -->
-                    <div class="col-md-6">
-                        <div class="free_text">
-                            <div class="section_title">
-                                <h2>Let’s download free from apple and play store</h2>
-                                <p>Instant free download from apple and play store orem Ipsum is simply dummy text of the printing.
-                                  and typese tting indus orem Ipsum has beenthe standard</p>
-                            </div>
-                            <ul class="app_btn">
-                              <li>
-                                <a href="#">
-                                  <img src="images/appstore_blue.png" alt="image" >
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <img src="images/googleplay_blue.png" alt="image" >
-                                </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- images -->
-                    <div class="col-md-6">
-                        <div class="free_img">
-                            <img src="images/download-screen01.png" alt="image" >
-                            <img class="mobile_mockup" src="images/download-screen02.png" alt="image" >
-                        </div>
-                    </div>
-                </div>
-                <!-- row end -->
-            </div>
-        </div>
-        <!-- container end -->
-    </section>
-    <!-- Download-Free-App-section-end  -->
-
-
-    <!-- Beautifull-interface-Section start -->
-    <section class="row_am interface_section">
-	  <!-- container start -->
-      <div class="container-fluid">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-            <!-- h2 -->
-            <h2>Beautifull <span>interface</span></h2>
-            <!-- p -->
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe standard dummy.
-            </p>
-        </div>
-
-          <!-- screen slider start -->
-          <div class="screen_slider" >
-            <div id="screen_slider" class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-1.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-2.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-3.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-4.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-5.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-3.png" alt="image" >
-                </div>
-              </div>
-          </div>
-          </div>
-          <!-- screen slider end -->
-      </div>
-      <!-- container end -->
-    </section>
-    <!-- Beautifull-interface-Section end -->
-
     <section id="section-order">
       <div class="container">
         <div class="row">
@@ -1175,7 +1040,7 @@
       <div class="container">
         <div class="row mb-4 mt-4">
           <div class="col-xl-4 offset-xl-2 text-center border-right">
-            <img src="assets/богдбанк.png" />
+            <img src="assets/bogdbank.png" />
           </div>
           <div class="col-xl-4 text-center">
             <img src="assets/цойлогсоз.png" />

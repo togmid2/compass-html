@@ -17,13 +17,15 @@ $(document).ready(function() {
 
 // All Slider Js
 
-$('#frmae_slider').owlCarousel({
-    loop:true,
+$('#compass_slider').owlCarousel({
+    loop:false,
     margin:10,
     autoplay: true,
     smartSpeed: 1500,
     nav:false,
-    dots: true, 
+    dots: true,
+    animateOut: 'fadeIn',
+    animateIn: 'fadeOut',
     responsive:{
         0:{
             items:1
@@ -200,17 +202,17 @@ $(document).ready(function () {
       $(this)
         .prev(".card-header")
         .find(".icon_faq")
-        .addClass("icofont-minus")
-        .removeClass("icofont-plus");
+        .addClass("icofont-simple-down")
+        .removeClass("icofont-simple-left");
     });
 
 
     // Toggle plus minus icon on show hide of collapse element
     $(".collapse").on("show.bs.collapse", function () {
-        $(this).prev(".card-header").find(".icon_faq").removeClass("icofont-plus").addClass("icofont-minus");
+        $(this).prev(".card-header").find(".icon_faq").removeClass("icofont-simple-left").addClass("icofont-simple-down");
       })
       .on("hide.bs.collapse", function () {
-        $(this).prev(".card-header").find(".icon_faq").removeClass("icofont-minus").addClass("icofont-plus");
+        $(this).prev(".card-header").find(".icon_faq").removeClass("icofont-simple-down").addClass("icofont-simple-left");
       });
 
       $(".collapse").on("show.bs.collapse", function () {
@@ -293,20 +295,20 @@ $(document).ready(function() {
 });
 
 // Fix Header Js
-$(window).scroll(function(){
-  if ($(window).scrollTop() >= 250) {
-      $('header').addClass('fix_style');
-  }
-  else {
-      $('header').removeClass('fix_style');
-  }
-  if ($(window).scrollTop() >= 260) {
-      $('header').addClass('fixed');
-  }
-  else {
-      $('header').removeClass('fixed');
-  }
-});
+// $(window).scroll(function(){
+//   if ($(window).scrollTop() >= 250) {
+//       $('header').addClass('fix_style');
+//   }
+//   else {
+//       $('header').removeClass('fix_style');
+//   }
+//   if ($(window).scrollTop() >= 260) {
+//       $('header').addClass('fixed');
+//   }
+//   else {
+//       $('header').removeClass('fixed');
+//   }
+// });
 
 
 

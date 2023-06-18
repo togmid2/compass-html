@@ -363,9 +363,7 @@ header.fixed .navbar {
 	animation: pulse-blue-small-sm 3.5s infinite
 }
 
-.navbar-brand img {
-    width: 150px;
-}
+
 
 /* navigation bar dropdown */
 .navbar-expand-lg .navbar-nav .has_dropdown {
