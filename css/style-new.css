@@ -116,7 +116,7 @@ body {
 
 #section-benefit{
     margin-top: 40px;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #section-benefit .card{
@@ -153,7 +153,7 @@ body {
     height:600px; 
     /* background-color: aqua; */
     position: relative;
-    margin: 50px 0;
+    margin: 100px 0;
 }
 #section-promo .promo-text-yellow{
     position:absolute;
