@@ -62,7 +62,12 @@ body {
 #section-compass .banner_shape1 {
     position: absolute;
     top: 0;
-    animation: animateHeart 2.4s infinite;
+    right: 0;
+    animation: circlemove 10s infinite;
+    /* animation: animateHeart 2.4s infinite; */
+}
+.compass-btn{
+    width: 16rem;
 }
 .banner_text {
     margin-top: 12rem;
