@@ -18,14 +18,20 @@ $(document).ready(function() {
 // All Slider Js
 
 $('#compass_slider').owlCarousel({
-    loop:false,
+    loop:true,
     margin:10,
     autoplay: true,
-    smartSpeed: 1500,
+    autoplayTimeout: 2000,
+    // smartSpeed: 1500,
     nav:false,
-    dots: true,
-    animateOut: 'fadeIn',
-    animateIn: 'fadeOut',
+    dots: false,
+    // autoHeight: true,
+    // animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    // animateIn: 'fadeOut',
+    mouseDrag:false,
+    touchDrag:false,
+    pullDrag:false,
     responsive:{
         0:{
             items:1
